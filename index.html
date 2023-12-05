@@ -42,6 +42,8 @@
     </style>
   
 </html>
+
+<body>
 <style>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet href="https://www.w3schools.com/w3css/4/w3.css">
@@ -70,7 +72,7 @@
     </tr>
   </table>
 
-<body style="background-colour#FFFFFF;margin-left:50px;"
+
 <hr>
   <h3 id="Abstract">Abstract</h3>
 
@@ -197,20 +199,24 @@ The Eurofighter has many key features which aid its agility at supersonic speeds
 
   <h2>Conference Presentation: Instability of the Eurofighter Typhooon</h2>
   <script>
-    // Array of slide image URLS
+  
     var slideImages = ["Slide1.jpg", "Slide2.jpg", "Slide3.jpg", "Slide4.jpg", "Slide5.jpg"];
     var currrentSlide = 0;
+    
     function showSlide() {
       document.getElementbyId('slide').src = slideImages[currentSlide];
     }
+    
     function nextSlide() {
       currentSlide = (currentSlide + 1) % slideImages.length;
       showSlide();
     }
+    
     function prevSlide() {
       currentSlide = (currentSlide - 1 + slideImages.length) % slideImages.length;
       showSlide();
     }
+    
     function showSlideNumber(slideNumber) {
       currentSlide = slideNumber - 1;
       showSlide();
@@ -220,6 +226,7 @@ The Eurofighter has many key features which aid its agility at supersonic speeds
 
   <div id="slide-container'>
     <img id="slide" src="Slide1.jpg" alt="Slide 1" style="width:100%; max-width:800px;">
+    
     <div class="button-container">
       <button class="button" onclick="prevSlide()">Previous</button>
       <button class="button" onclick="nextSlide()">Next</button>
@@ -263,7 +270,7 @@ The Eurofighter has many key features which aid its agility at supersonic speeds
       }
     </style>
      
-    
+  </body>
 
 
    
